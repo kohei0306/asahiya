@@ -509,6 +509,9 @@
     padding-top: 16px;
   }
 
+  /* ===== BOOKING ===== */
+  #booking { background: var(--light); }
+
   /* ===== FAQ ===== */
   #faq { background: var(--white); }
 
@@ -657,6 +660,7 @@
 <header>
   <nav>
     <a href="#plans">料金</a>
+    <a href="#booking">無料予約</a>
     <a href="#faq">よくある質問</a>
     <a href="#contact">お問い合わせ</a>
   </nav>
@@ -671,7 +675,7 @@
     <p class="hero-desc">パート採用の前に、まず<strong>初月5,000円からのAI業務自動化</strong>を試してみませんか？</p>
     <div class="btn-group">
       <a href="#plans" class="btn-primary">サービスを見る</a>
-      <a href="#contact" class="btn-secondary">まずは相談する</a>
+      <a href="#booking" class="btn-secondary">無料相談を予約する</a>
     </div>
   </div>
 </section>
@@ -846,6 +850,22 @@
       ※ 外部ツール（Make・Zapier等）の利用料が発生する場合は別途実費請求します。事前にご説明します。<br>
       ※ 決済はStripeによるクレジットカード自動引落しです。いつでも解約可能です。
     </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="section-inner">
+    <div class="section-label">Booking</div>
+    <h2 class="section-title">無料相談を予約する</h2>
+    <p style="font-size:15px;color:var(--gray);margin-bottom:40px;line-height:1.8;">
+      30分・完全無料・売り込みなし。<br>
+      カレンダーから都合のよい日時を選んでください。
+    </p>
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/asahiya-kk/30min" style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
   </div>
 </section>
 
