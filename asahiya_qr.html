@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>アサヒ屋 QRコード</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #fff8f3;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+  }
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(232,64,28,0.15);
+    text-align: center;
+  }
+  h1 {
+    color: #E8401C;
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  p {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  #qrcode canvas, #qrcode img {
+    border-radius: 8px;
+  }
+  .url {
+    margin-top: 16px;
+    color: #E8401C;
+    font-size: 11px;
+    word-break: break-all;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>🔥 アサヒ屋</h1>
+  <p>AI業務自動化サービス</p>
+  <div id="qrcode"></div>
+  <div class="url">https://kohei0306.github.io/asahiya/</div>
+</div>
+<script>
+new QRCode(document.getElementById("qrcode"), {
+  text: "https://kohei0306.github.io/asahiya/",
+  width: 256,
+  height: 256,
+  colorDark: "#E8401C",
+  colorLight: "#ffffff",
+  correctLevel: QRCode.CorrectLevel.H
+});
+</script>
+</body>
+</html>
